@@ -120,7 +120,7 @@ body {
         color: rgb(95, 95, 95);
     }
     margin-top: 30px;
-    a{
+    .btn{
     display: inline-block;
     padding: 10px 20px;
     background-color: #6bbfff;
@@ -152,4 +152,49 @@ hr{
     border-top: 1px solid #b4b4b4;
     box-shadow: 0px 0px -10px #b4b4b4;
     margin: 20px 0;
+} 
+
+/* mobile */
+@media (max-width:768px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        .img{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .text{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        .foto{
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+        .links{
+            margin-left: 0px;
+            text-align: center;
+        }
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px 20px 50px 20px;
+        direction: ltr;
+        font-size: 1rem;
+    }
+    .card-info p{
+        font-size: 0.9rem;
+        text-align: justify;
+        margin: 0px 10px 0px 10px;
+    }
 }
