@@ -5,6 +5,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --bg:#f5f5f5;
+    --text: #333;
+    --soft-text: rgb(95, 95, 95);
+
+    --border:#b4b4b4;
+
+    --primary:#6bbfff;
+    --primary-light:#cfecf8;
+    --primary-text:#1e7cff;
+}
+body.dark{
+    --bg: #0f1729; /* tu color oscuro */
+    --text: #ffffff;
+    --soft-text: #cfcfcf;
+
+    --border: #3a3a3a;
+
+    --primary: #4aa5ff;
+    --primary-light: #121e2e;
+    --primary-text: #7ab8ff;
+}
 a,a:visited{
     text-decoration: none;
     color: inherit;
@@ -12,8 +34,8 @@ a,a:visited{
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: var(--bg);
+    color: var(--text);
     line-height: 1.6;
 }
 /* header */
@@ -23,12 +45,12 @@ body {
     align-items: center;
     padding: 20px;
     margin: 0 100px 0px 100px;
-    border-bottom: 1px solid #b4b4b4;
-    box-shadow: 0px 0px -10px #b4b4b4;
+    border-bottom: var(--border);
+    box-shadow: 0px 0px -10px var(--border);
 }
 .header .img .logo{
     font-size: 1.5rem;
-    color: #6bbfff;
+    color: var(--primary);
 }
 .header .img .text{
     font-size: 1.5rem;
@@ -39,17 +61,17 @@ body {
     margin: 0 15px;
     font-size: 1.1rem;
     font-weight: 500;
-    color: #333;
+    color: var(--text);
     &:nth-child(2){
-        color: rgb(95, 95, 95);
+        color:var(--soft-text)
     }
     &:nth-child(3){
-        color: rgb(95, 95, 95);
+        color:var(--soft-text)
     }
 }
 
 .hero .card p{
-    color: rgb(95, 95, 95);
+    color:var(--soft-text)
     
 }
 
@@ -79,12 +101,12 @@ body {
     margin-left: -20px;
     font-size: 1.5rem;
     
-    color: rgb(125, 125, 125);
+    color: var(--soft-text);
 }
 .hero .card .btn{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6bbfff;
+    background-color:var(--primary);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -117,13 +139,13 @@ body {
     justify-content: center;
     
     p{
-        color: rgb(95, 95, 95);
+        color:var(--soft-text)
     }
     margin-top: 30px;
     .btn{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6bbfff;
+    background-color: var(--primary);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -198,3 +220,4 @@ hr{
         margin: 0px 10px 0px 10px;
     }
 }
+
